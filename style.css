@@ -20,4 +20,58 @@
   --quote-color: #1f2937;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	font-family: 'roboto', sans-serif;
+}
 
+.header {
+	display: flex;
+	justify-content: space-between;
+	background: var(--dark-background-color);
+	color:var(--header-color);
+	font-size: var(--secondary-text);
+	padding: 10px 100px 50px 100px;
+}
+
+.right-header {
+	display: flex;
+	gap: 10px;
+}
+
+.image {
+	width: 300px;
+	height: 200px;
+	background: red;;
+}
+
+.info-section {
+	display: flex;
+}
+
+.quote-section {
+
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	border: 2px red solid;
+	margin: 10px;
+}
+
+.footer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.sign-up {
+	width: 500px;
+	height: 200px;
+	background: blue;
+}
