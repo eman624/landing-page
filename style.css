@@ -1,0 +1,23 @@
+:root {
+  --dark-background-color: #1f2937;
+  --main-text: 48px;
+  --main-font-weight: 900;
+  --main-color: #f9faf8;
+  --secondary-text: 18px;
+  --secondary-color: #e5e7eb;
+  --header-text: 24px;
+  --header-color: #f9faf8;
+
+  --button-color: #3882f6;
+  --info-header-text: 36px;
+  --info-header-font-weight: 900;
+  --info-header-color: #1f2937;
+
+  --quote-color: #e5e7eb;
+  --quote-text: 36px;
+  --quote-font-weight: 100;
+  --quote-emphasis: font-style: italic;
+  --quote-color: #1f2937;
+}
+
+
