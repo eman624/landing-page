@@ -1,3 +1,76 @@
+/******************************************************/
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.2;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+/******************************************************/
+
 :root {
   --dark-background-color: #1f2937;
   --main-text: 48px;
@@ -28,6 +101,7 @@ ul {
 
 li {
 	display: inline-block;
+	margin: 10px
 }
 
 a {
@@ -37,11 +111,23 @@ a {
 	
 }
 
+h1 {
+	max-width: 300px;
+
+}
+
+h2 {
+	text-align: center;
+	margin: 40px 0;
+}
+
+p {
+	max-width: 450px;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
-	margin: 0;
-	padding: 0;
 	font-family: 'roboto', sans-serif;
 }
 
@@ -51,33 +137,70 @@ body {
 	background: var(--dark-background-color);
 	color:var(--header-color);
 	font-size: var(--secondary-text);
-	padding: 10px 100px 50px 100px;
+	padding: 10px 100px 100px 100px;
+}
+
+.left-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .right-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+
+.bottom-header {
+	margin-top: 80px;
 }
 
 .image {
 	display: block;
 	width: 300px;
 	height: 200px;
-	background: red;
+	margin-left: auto;
 }
 
 .info-section {
-	display: flex;
+	
 }
 
 .quote-section {
 
 }
 
-.box {
-	width: 100px;
-	height: 100px;
+.box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-wrap: wrap; */
 	border-radius: 5px;
-	border: 2px red solid;
-	margin: 10px;
+	width: 30%;
+	margin: 0 auto;
+	gap: 30px;
+	
+}
+
+.box-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* outline: orchid solid; */
+}
+
+.box {
+	width: 100%;
+	height: 120px;
+	border-radius: 5px;
+	border: 2px blue solid; 
+}
+
+.box-info p {
+	/* max-width: 1200px; */
+	text-align: center;
 }
 
 .footer {
