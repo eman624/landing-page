@@ -20,6 +20,23 @@
   --quote-color: #1f2937;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+a {
+
+	color: var(--main-color);	
+	text-decoration: none;
+	
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -38,14 +55,13 @@ body {
 }
 
 .right-header {
-	display: flex;
-	gap: 10px;
 }
 
 .image {
+	display: block;
 	width: 300px;
 	height: 200px;
-	background: red;;
+	background: red;
 }
 
 .info-section {
