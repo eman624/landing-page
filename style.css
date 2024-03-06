@@ -90,7 +90,6 @@ select {
   --quote-text: 36px;
   --quote-font-weight: 100;
   --quote-emphasis: font-style: italic;
-  --quote-color: #1f2937;
 }
 
 ul {
@@ -194,24 +193,30 @@ body {
 	border: 2px blue solid; 
 }
 
-.col {
-	flex: 1;
-	padding: 16px;
-}
-
 .text {
 	text-align: center;
 	font-size: 14px;
 }
 
+.quote-section {
+	background: var(--quote-color);
+}
+.quote {
+	text-align: center;
+	margin: 0 auto;;
+}
+
 .footer {
  display: flex;
+ flex: 1;
  justify-content: center;
  align-items: center;
 }
 
-.sign-up {
-	width: 500px;
-	height: 200px;
-	background: blue;
+.sign-up-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--button-color);
+	/* padding: 20px; */
 }
