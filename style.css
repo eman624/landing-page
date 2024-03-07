@@ -206,7 +206,7 @@ body {
 	margin: 0 auto;;
 }
 
-.footer {
+.call-section {
  display: flex;
  justify-content: center;
  align-items: center;
@@ -220,4 +220,14 @@ body {
 	align-items: center;
 	background: var(--button-color);
 	padding: 50px 80px;
+}
+
+.left-section {
+	padding-right: 70px;
+}
+
+.footer {
+	background:var(--dark-background-color);
+	color: var(--main-color);
+	padding: 30px 0;
 }
