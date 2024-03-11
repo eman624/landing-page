@@ -138,7 +138,7 @@ p {
   color: var(--main-color);
   border: none;
   border-radius: 10px;
-  padding: 10px 35px;
+  padding: 7px 35px;
 }
 
 body {
@@ -181,34 +181,33 @@ body {
   width: 400px;
 }
 .info-section {
-  padding: 30px 0 100px 0;
+  color: var(--info-header-color);
+  padding: 40px 0 100px 0;
 }
 
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-radius: 5px;
-  gap: 30px;
+  gap: 80px;
 }
 
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 130px;
-  /* outline: orchid solid; */
+  max-width: 170px;
 }
 
 .box {
-  width: 130px;
-  height: 130px;
-  border-radius: 5px;
-  border: 2px blue solid;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  border: 4px var(--button-color) solid;
 }
 
 .box-text {
-  padding-top: 5px;
+  margin-top: 10px;
 }
 
 .quote-section {
@@ -233,8 +232,6 @@ body {
 }
 
 .author {
-  /* text-align: right; */
-
   font-size: var(--quote-text);
   font-weight: var(--quote-font-weight);
   text-align: right;
@@ -254,6 +251,11 @@ body {
   align-items: center;
   background: var(--button-color);
   padding: 50px 80px;
+  border-radius: 10px;
+}
+
+.call-button {
+  outline: var(--main-color) solid 2px;
 }
 
 .left-section {
