@@ -101,7 +101,7 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px 10px 0;
+  margin: 0 0 0 20px;
 }
 
 a {
@@ -111,8 +111,9 @@ a {
 
 h1 {
   font-size: var(--main-text);
-  max-width: 300px;
   font-weight: var(--extra-bold);
+  color: var(--main-color);
+  max-width: 350px;
 }
 
 h2 {
@@ -130,7 +131,14 @@ p {
 
 .text {
   text-align: center;
-  font-size: 14px;
+}
+
+.button {
+  background: var(--button-color);
+  color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 35px;
 }
 
 body {
@@ -138,46 +146,40 @@ body {
   flex-direction: column;
   font-family: "roboto", sans-serif;
   font-size: var(--secondary-text);
+  color: var(--main-color);
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background: var(--dark-background-color);
-  color: var(--header-color);
   font-size: var(--secondary-text);
-  padding: 20px 160px 100px 160px;
-  /* padding: 20px 10% 140px 10%; */
-}
-
-.left-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-right: 40px;
-}
-
-.subtext {
   color: var(--secondary-color);
+  padding: 20px 200px 100px 200px;
 }
 
-.right-header {
+.top-header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-self: center;
+  margin-bottom: 120px;
 }
 
 .bottom-header {
-  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-left-header {
+  margin-right: 50px;
+}
+
+.subtext {
+  max-width: 450px;
+  margin-bottom: 10px;
 }
 
 .image {
-  display: block;
-  width: 300px;
-  height: 200px;
-  margin-left: auto;
+  width: 400px;
 }
-
 .info-section {
   padding: 30px 0 100px 0;
 }
