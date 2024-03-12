@@ -72,7 +72,7 @@ select {
 /******************************************************/
 
 :root {
-  --dark-background-color: #1f2937;
+  --dark-bg-color: #1f2937;
   --main-text: 48px;
   --extra-bold: 900;
   --main-color: #f9faf8;
@@ -82,12 +82,12 @@ select {
   --header-text: 24px;
   --header-color: #f9faf8;
 
-  --button-color: #3882f6;
+  --button-bg-color: #3882f6;
   --info-header-text: 36px;
   --info-header-font-weight: 900;
   --info-header-color: #1f2937;
 
-  --quote-color: #e5e7eb;
+  --quote-bg-color: #e5e7eb;
   --quote-text: 36px;
   --quote-font-weight: 100;
   --quote-emphasis: italic;
@@ -126,7 +126,8 @@ h3 {
 }
 
 p {
-  max-width: 450px;
+  margin: 0;
+  max-width: 820px;
 }
 
 .text {
@@ -134,11 +135,12 @@ p {
 }
 
 .button {
-  background: var(--button-color);
+  background: var(--button-bg-color);
   color: var(--main-color);
   border: none;
   border-radius: 10px;
   padding: 7px 35px;
+  cursor: pointer;
 }
 
 body {
@@ -150,7 +152,7 @@ body {
 }
 
 .header {
-  background: var(--dark-background-color);
+  background: var(--dark-bg-color);
   font-size: var(--secondary-text);
   color: var(--secondary-color);
   padding: 20px 200px 100px 200px;
@@ -203,7 +205,7 @@ body {
   width: 160px;
   height: 160px;
   border-radius: 10px;
-  border: 4px var(--button-color) solid;
+  border: 4px var(--button-bg-color) solid;
 }
 
 .box-text {
@@ -211,24 +213,22 @@ body {
 }
 
 .quote-section {
-  background: var(--quote-color);
-  /* padding: 80px 200px 60px 200px; */
-  padding: 80px 0 60px 0;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--quote-bg-color);
+  color: var(--info-header-color);
+  font-size: var(--info-header-text);
+  font-family: var(--info-header-font-weight);
+  padding: 80px 0 60px 0;
 }
 
 .quote-container {
-  /* margin: 0 auto;
-	outline: red solid 2px; */
+  max-width: 1000px;
 }
 
 .quote {
-  /* margin: auto;
-	padding: auto; */
 }
 
 .author {
@@ -241,7 +241,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 150px;
+  padding: 100px 200px;
 }
 
 .sign-up-box {
@@ -249,8 +249,8 @@ body {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  background: var(--button-color);
-  padding: 50px 80px;
+  background: var(--button-bg-color);
+  padding: 60px 80px;
   border-radius: 10px;
 }
 
@@ -263,7 +263,7 @@ body {
 }
 
 .footer {
-  background: var(--dark-background-color);
+  background: var(--dark-bg-color);
   color: var(--main-color);
   padding: 30px 0;
 }
