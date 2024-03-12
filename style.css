@@ -74,7 +74,7 @@ select {
 :root {
   --dark-bg-color: #1f2937;
   --main-text: 48px;
-  --extra-bold: 900;
+  --extra-bold: 600;
   --main-color: #f9faf8;
   --secondary-text: 18px;
   --secondary-color: #e5e7eb;
@@ -84,7 +84,7 @@ select {
 
   --button-bg-color: #3882f6;
   --info-header-text: 36px;
-  --info-header-font-weight: 900;
+  --info-header-font-weight: 600;
   --info-header-color: #1f2937;
 
   --quote-bg-color: #e5e7eb;
@@ -218,22 +218,23 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--quote-bg-color);
-  color: var(--info-header-color);
-  font-size: var(--info-header-text);
-  font-family: var(--info-header-font-weight);
   padding: 80px 0 60px 0;
 }
 
 .quote-container {
-  max-width: 1000px;
+  max-width: 780px;
+  color: var(--info-header-color);
 }
 
 .quote {
+  font-size: var(--quote-text);
+  font-family: var(--info-header-font-weight);
+  font-style: var(--quote-emphasis);
 }
 
 .author {
-  font-size: var(--quote-text);
-  font-weight: var(--quote-font-weight);
+  font-size: var(--header-text);
+  font-weight: var(--extra-bold);
   text-align: right;
 }
 
